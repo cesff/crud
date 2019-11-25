@@ -64,7 +64,7 @@
 		<label class="col-sm-2 col-form-label"><b>Motivasi Hidup </b></label>
 		<div class="col-sm-10">
 		<textarea name="motivasi_hidup" class="form-control" required placeholder="Masukan Motivasi Hidup..."></textarea><br><br>						
-		<button type="submit" class="btn btn-success" name="simpan">Simpan</button>
+		<button type="submit" class="btn btn-primary" name="simpan">Simpan</button>
 
 	</form>
 </body>

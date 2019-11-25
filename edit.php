@@ -21,46 +21,41 @@
 		$alamat2 = $data['alamat'];
 		$motivasi_hidup2 = $data['motivasi_hidup'];
 	}
-	?>
-		<br>
-		<center><b>EDIT BIODATA </b></center>
-		<br>
-		<form action="proses.php?aksi=update" method="post">
-
+	?>	
+	<form action="proses.php?aksi=update" method="post">	
+	<div class="container">
+	<div class="row">
+		<div class="col-md-12" style="padding:20px">
+			<div class="card">
+		
+		<div class="card-header"><center><b>EDIT BIODATA</b></center></div>
+		<div class="card-body">
 		<input type="hidden" name="id" value="<?php echo $id2 ?>">
 
-		<div class="form-group row">
-		<label class="col-sm-2 col-form-label"><b>Nama </b></label>
-		<div class="col-sm-10">
-		<input type="text" name="nama" class="form-control" value="<?php echo $nama2 ?>" required>
-		</div>
+		<div class="form-group">
+		<label ><b>Nama </b></label>
+		<input type="text" name="nama" class="form-control" value="<?php echo $nama2?>">
 		</div>
 
-		<div class="form-group row">
-		<label class="col-sm-2 col-form-label"><b>Tanggal Lahir</b></label>
-		<div class="col-sm-10">
-		<input type="date"  class="form-control" name="tanggal_lahir" value="<?php echo $tanggal_lahir2 ?>">
-		</div>
+		<div class="form-group">
+		<label ><b>Tanggal Lahir</b></label>
+		<input type="date" name="tanggal_lahir" class="form-control" value="<?php echo $tanggal_lahir2?>">
 		</div>
 
-		<fieldset class="form-group">
-    	<div class="row">
-      	<legend class="col-form-label col-sm-2 pt-0"><b>Jenis Kelamin</b></legend>
-      	<div class="col-sm-10">
-        <div class="form-check">
-		<input class="form-check-input" type="radio" name="jenis_kelamin" id="gridRadios1" value="Laki-Laki" checked>
-        <label class="form-check-label" for="gridRadios1">Laki-Laki</label></div>
-		<div class="form-check">
-        <input class="form-check-input" type="radio" name="jenis_kelamin" id="gridRadios2" value="Perempuan">
-        <label class="form-check-label" for="gridRadios2">Perempuan</label>
+		<div class="form-group">
+		<label><b>Tempat Lahir </b></label>
+		<input type="text" name="tempat_lahir" class="form-control" value="<?php echo $tempat_lahir2 ?>">
 		</div>
+		
+		<div class="form-group">
+		<label><b>Jenis Kelamin</b></label><br>
+      	<input  type="radio" name="jenis_kelamin" value="Laki-Laki" checked><b> Laki Laki </b><br> 
+        <input  type="radio" name="jenis_kelamin" value="Perempuan"><b> Perempuan</b></label>
 		</div>
-		</div>
-		<br>
+	
 
-		<div class="form-group row">
-		<label class="col-sm-2 col-form-label"><b>Agama</b></label>
-		<div class="col-sm-10">
+		<div class="form-group">
+		<label><b>Agama</b></label>
 		<select name="agama" class="form-control" >
 		<option value="Islam">Islam</option>
 		<option value="Kristen">Kristen</option>
@@ -69,27 +64,31 @@
 		<option value="Khatolik">Khatolik</option>
 		</select>
 		</div>
+		
+		<div class="form-group">
+		<label ><b>Alamat </b></label>
+		<Input type="text" name="alamat" class="form-control" value="<?php echo $alamat2 ?>">
 		</div>
 		
-		<div class="form-group row">
-		<label class="col-sm-2 col-form-label"><b>Alamat </b></label>
-		<div class="col-sm-10">
-		<Input type="text" name="alamat" class="form-control" value="<?php echo $alamat2 ?>"></textarea>
-		</div>
-		</div>
-
-		<div class="form-group row">
-		<label class="col-sm-2 col-form-label"><b>Motivasi Hidup </b></label>
-		<div class="col-sm-10">
+		<div class="form-group">
+		<label ><b>Motivasi Hidup </b></label>
 		<input type="text" name="motivasi_hidup" class="form-control" value="<?php echo $motivasi_hidup2 ?>"></textarea>
-		<br>
-
-
-		<button type="submit" class="btn btn-success" name="simpan">Simpan</button>
+		</div>
 		
-		
-		</form>
 
+
+		<div class="form-group">
+								<button class="btn btn-primary btn-block" name="simpan">Simpan</button>
+									</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+				<footer>
+				<center><b>&copy; Rizky Syaefuloh</b></center>
+				</footer>
+				
+		</form>			
 		</body>
-
 		</html>

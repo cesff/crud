@@ -26,7 +26,7 @@
 				<div class="row">
 					<div class="col-md-12" style="padding:20px">
 						<div class="card">
-							<div class="card-header"><center><b>BIODATA</b></center></div>
+							<div class="card-header"><center><b>BIODATA ANDA</b></center></div>
 	
 							<div class="card-body">
 								<form action="index.php" method="post">
@@ -61,7 +61,7 @@
 		</div>
 
 									<div class="form-group">
-								<button class="btn btn-success btn-block">Kembali</button>
+								<button class="btn btn-primary btn-block">Kembali</button>
 									</div>
 								</form>
 							</div>
